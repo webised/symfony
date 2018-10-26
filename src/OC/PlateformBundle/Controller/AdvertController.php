@@ -9,7 +9,7 @@ class AdverController
 {
     public function indexAction()
 	{
-		
+		$this->render('@OCPlatform/Advert/index.html.twig');
 	}	
 	
 }
