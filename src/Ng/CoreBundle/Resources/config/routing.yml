@@ -1,0 +1,8 @@
+ng_core_homepage:
+    path:     /
+    defaults: { _controller: NgCoreBundle:Front:index }
+
+ng_core_contact:
+     path: /contact
+     defaults:
+         _controller: NgCoreBundle:Front:contact

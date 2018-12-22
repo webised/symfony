@@ -1,0 +1,17 @@
+{# src/OC/OCPlateformBundle/Ressources/view/layout.html;twig #}
+
+{%  extends '@NgCore/layout.html.twig' %}
+
+{%  block title %}
+ annonces - {{ parent() }}
+{%  endblock %}
+
+{% block body %}
+
+  <h2>Les annonces</h2>
+
+  {% block ocplatform_body  %}
+  {% endblock %}
+
+{% endblock %}
+

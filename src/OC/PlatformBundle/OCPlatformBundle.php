@@ -1,6 +1,6 @@
 <?php
 
-namespace OC\PlateformBundle;
+namespace OC\PlatformBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

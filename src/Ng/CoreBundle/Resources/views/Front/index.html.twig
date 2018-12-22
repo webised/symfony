@@ -1,0 +1,18 @@
+{% extends "@NgCore/layout.html.twig" %}
+{% block body %}
+ <div class="row">
+     {% for message in  app.session.flashbag.get('info') %}
+
+        <p>Message flash : {{ message }}</p>
+     {%  endfor %}
+ </div>
+<div class="row">
+    {%  for advert in listAdverts %}
+    <div class="col-md-12">
+        <h3>{{ advert.title }}</h3>
+        <p>{{ advert.date|date('d/m/Y') }}</p>
+        <p><a href="{{ path('oc_platform_view', {'id': advert.id}) }}">Voir</a></p>
+    </div>
+    {%  endfor %}
+</div>
+{%  endblock %}
